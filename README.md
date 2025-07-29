@@ -9,7 +9,7 @@ An intelligent web application built with Python that leverages the power of Goo
 ![App Screenshot](<img width="1919" height="879" alt="Screenshot 2025-07-30 000417" src="https://github.com/user-attachments/assets/cf7ed615-1784-4c53-a96c-3e1356181771" />)
 
 ![App Screenshot](<img width="1919" height="873" alt="Screenshot 2025-07-30 000429" src="https://github.com/user-attachments/assets/2642005c-4acd-47ae-b493-085bdce663ac" />)
-You can test the live application here: [IntelliDoc AI Live App](#) (Add your live URL here)
+You can test the live application here: [https://intellidoc-ai-pdf-analyzer-saravanan.streamlit.app/](#) (Add your live URL here)
 
 ## 🚀 About The Project
 
