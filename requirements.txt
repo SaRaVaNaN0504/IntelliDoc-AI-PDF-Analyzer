@@ -1,0 +1,5 @@
+streamlit
+torch
+transformers
+pymupdf
+google-generativeai

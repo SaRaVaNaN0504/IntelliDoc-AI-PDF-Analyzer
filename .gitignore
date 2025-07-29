@@ -1,0 +1,13 @@
+# Virtual Environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Streamlit secrets file (extra layer of safety)
+.streamlit/secrets.toml 
+
+# IDE specific files
+.vscode/
