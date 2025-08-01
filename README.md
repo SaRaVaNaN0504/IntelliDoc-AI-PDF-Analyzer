@@ -1,6 +1,11 @@
 # 🧠 IntelliDoc AI: Advanced PDF Analyzer & Q&A Chatbot
+---
 
-![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.30%2B-red?logo=streamlit)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini_API-4285F4?logo=google)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 An intelligent web application built with Python that leverages the power of Google's Gemini Pro model to provide sophisticated analysis of PDF documents. IntelliDoc AI can generate multiple types of summaries and hold a detailed, context-aware conversation about the document's content.
 
