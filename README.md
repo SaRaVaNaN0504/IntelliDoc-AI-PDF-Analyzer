@@ -5,10 +5,9 @@
 An intelligent web application built with Python that leverages the power of Google's Gemini Pro model to provide sophisticated analysis of PDF documents. IntelliDoc AI can generate multiple types of summaries and hold a detailed, context-aware conversation about the document's content.
 
 ## ✨ Live Demo
+<img width="1919" height="874" alt="image" src="https://github.com/user-attachments/assets/011a19be-50f3-4f8d-9e8a-52ec23f1538f" />
 
-![App Screenshot](<img width="1919" height="879" alt="Screenshot 2025-07-30 000417" src="https://github.com/user-attachments/assets/cf7ed615-1784-4c53-a96c-3e1356181771" />)
 
-![App Screenshot](<img width="1919" height="873" alt="Screenshot 2025-07-30 000429" src="https://github.com/user-attachments/assets/2642005c-4acd-47ae-b493-085bdce663ac" />)
 
 You can test the live application here: [https://intellidoc-ai-pdf-analyzer-saravanan.streamlit.app/]
 
