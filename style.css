@@ -1,0 +1,446 @@
+/* style.css - Improved Version */
+
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables for consistent theming */
+:root {
+    --primary-color: #4a0f6b;
+    --primary-light: #6a1b9a;
+    --primary-gradient: linear-gradient(135deg, #a091f6 0%, #d870ad 100%);
+    --secondary-gradient: linear-gradient(135deg, #fce0e8 0%, #e3e8ff 50%, #d8d8f8 100%);
+    --card-background: linear-gradient(135deg, rgba(255, 240, 245, 0.85), rgba(235, 235, 255, 0.85));
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-light: #e0cffc;
+    --shadow-light: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.12);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+}
+
+/* IMPROVED: More subtle and stable background animation */
+.stApp {
+    font-family: 'Inter', sans-serif;
+    background: var(--secondary-gradient);
+    background-size: 300% 300%;
+    animation: gentleGradient 20s ease infinite;
+    min-height: 100vh;
+}
+
+@keyframes gentleGradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* IMPROVED: Enhanced title card with better spacing and typography */
+.title-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    box-shadow: var(--shadow-medium);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+}
+
+.title-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 2.75rem); /* Responsive font size */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 var(--spacing-sm) 0;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 3vw, 1.125rem); /* Responsive font size */
+    margin-top: var(--spacing-sm);
+    color: var(--primary-light);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* IMPROVED: Better sidebar styling with proper Streamlit classes */
+.css-1d391kg, .st-emotion-cache-16txtl3 {
+    background: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-light);
+}
+
+/* IMPROVED: Enhanced button styling with better states */
+.stButton > button {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+    background: linear-gradient(135deg, #9285f5 0%, #d76bac 100%);
+}
+
+.stButton > button:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-light);
+}
+
+.stButton > button:focus {
+    outline: none;
+    box-shadow: var(--shadow-medium), 0 0 0 3px rgba(160, 145, 246, 0.3);
+}
+
+/* IMPROVED: Enhanced response card with better readability */
+.response-card {
+    background: var(--card-background);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin: var(--spacing-lg) 0;
+    box-shadow: var(--shadow-medium);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    line-height: 1.6;
+    position: relative;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* IMPROVED: Better typography hierarchy inside cards */
+.response-card h1, 
+.response-card h2, 
+.response-card h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: var(--spacing-sm);
+    margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.response-card h1:first-child,
+.response-card h2:first-child,
+.response-card h3:first-child {
+    margin-top: 0;
+}
+
+.response-card h1 { font-size: 1.5rem; }
+.response-card h2 { font-size: 1.25rem; }
+.response-card h3 { font-size: 1.125rem; }
+
+.response-card strong {
+    color: var(--primary-light);
+    font-weight: 600;
+}
+
+.response-card p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.response-card li {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.response-card ul, .response-card ol {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.response-card ul {
+    list-style-type: disc;
+}
+
+.response-card ol {
+    list-style-type: decimal;
+}
+
+.response-card blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.response-card code {
+    background: rgba(74, 15, 107, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9em;
+    color: var(--primary-color);
+}
+
+/* IMPROVED: Enhanced text input styling */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.stTextInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(160, 145, 246, 0.2);
+    outline: none;
+    background: rgba(255, 255, 255, 1);
+}
+
+.stTextInput > div > div > input::placeholder,
+.stTextArea > div > div > textarea::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* IMPROVED: Better radio button styling */
+.stRadio > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.stRadio > div > label {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--border-light);
+    border-radius: 20px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+}
+
+.stRadio > div > label:hover {
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-light);
+}
+
+/* Style for selected radio button */
+.stRadio > div > label[data-baseweb="radio"] input:checked + div {
+    background: var(--primary-gradient);
+    color: white;
+    border-color: transparent;
+    box-shadow: var(--shadow-medium);
+}
+
+/* IMPROVED: Better section headers */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: var(--spacing-sm);
+}
+
+/* IMPROVED: Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: var(--radius-md);
+    padding: 0.25rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: transparent;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border: none;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--text-primary);
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background: var(--primary-gradient);
+    color: white;
+    box-shadow: var(--shadow-light);
+}
+
+/* IMPROVED: File uploader styling */
+.stFileUploader > div {
+    border: 2px dashed var(--border-light);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.stFileUploader > div:hover {
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* IMPROVED: Success, error, and info messages */
+.stSuccess, .stError, .stInfo, .stWarning {
+    border-radius: var(--radius-md);
+    border: none;
+    box-shadow: var(--shadow-light);
+    backdrop-filter: blur(10px);
+}
+
+.stSuccess {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.stError {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.stInfo {
+    background: var(--primary-gradient);
+}
+
+.stWarning {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+/* IMPROVED: Spinner styling */
+.stSpinner > div {
+    border-top-color: var(--primary-color) !important;
+}
+
+/* IMPROVED: Progress bar styling */
+.stProgress > div > div > div {
+    background: var(--primary-gradient);
+    border-radius: var(--radius-sm);
+}
+
+/* ADDED: Loading states */
+.loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl);
+    color: var(--text-secondary);
+}
+
+/* ADDED: Responsive design improvements */
+@media (max-width: 768px) {
+    .title-card {
+        padding: var(--spacing-lg);
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .response-card {
+        padding: var(--spacing-lg);
+        margin: var(--spacing-md) 0;
+    }
+    
+    .stRadio > div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .stRadio > div > label {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .stTabs [data-baseweb="tab"] {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ADDED: Print styles */
+@media print {
+    .stApp {
+        background: white !important;
+    }
+    
+    .title-card, .response-card {
+        background: white !important;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+}
+
+/* ADDED: Dark mode support (if needed) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-primary: #e2e8f0;
+        --text-secondary: #a0aec0;
+        --card-background: linear-gradient(135deg, rgba(45, 55, 72, 0.9), rgba(74, 85, 104, 0.9));
+    }
+}
+
+/* Hide Streamlit default elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+.stDeployButton {display: none;}
+
+/* ADDED: Accessibility improvements */
+.stButton > button:focus-visible,
+.stTextInput > div > div > input:focus-visible,
+.stRadio > div > label:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* ADDED: Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
