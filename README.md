@@ -68,11 +68,12 @@ Set up your API Key:
 
 Inside .streamlit, create a file named secrets.toml
 
-Add your Google AI API key to secrets.toml:
+####  Add your Google AI API key to secrets.toml:
 
 #### toml
 GOOGLE_API_KEY = "YOUR_API_KEY_HERE"
-Run the Streamlit app:
+
+#### Run the Streamlit app:
 
 sh
 streamlit run app.py
