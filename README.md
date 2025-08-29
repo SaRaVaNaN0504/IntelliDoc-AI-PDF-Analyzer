@@ -55,7 +55,7 @@ This project was built using the following technologies:
 
 #### 1. Clone the repository:
 ```sh
-git clone https://github.com/YOUR_USERNAME/IntelliDoc-AI-PDF-Analyzer.git
+git clone https://github.com/SaRaVaNaN0504/IntelliDoc-AI-PDF-Analyzer.git
 cd IntelliDoc-AI-PDF-Analyzer
 ```
 
