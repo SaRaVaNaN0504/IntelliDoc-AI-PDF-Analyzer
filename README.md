@@ -61,15 +61,17 @@ cd IntelliDoc-AI-PDF-Analyzer
 
 #### Create and activate a virtual environment:
 
-sh
+```sh
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
 
 #### Install the dependencies:
 
-sh
+```sh
 pip install -r requirements.txt
 Set up your API Key:
+```
 
 #### Create a .streamlit directory in the root of the project
 
@@ -82,8 +84,9 @@ GOOGLE_API_KEY = "YOUR_API_KEY_HERE"
 
 #### Run the Streamlit app:
 
-sh
+```sh
 streamlit run app.py
+```
 ### Acknowledgements
 A massive thank you to the developers of Streamlit for making web app creation in Python so accessible
 
