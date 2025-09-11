@@ -18,11 +18,15 @@ An intelligent web application built with Python that leverages the power of Goo
 
 You can test the live application here: [https://intellidoc-ai-pdf-analyzer-saravanan.streamlit.app/]
 
+---
+
 ## 🚀 About The Project
 
 IntelliDoc AI was designed to solve a common problem: extracting meaningful insights from dense PDF documents quickly and efficiently. Instead of manually reading through pages, users can simply upload a document and let the AI do the heavy lifting. The application provides not just a simple summary, but also a powerful Q&A interface that allows users to "talk" to their documents.
 
 The project features a stunning, fully responsive UI with an animated, glassmorphism-inspired theme, created entirely within Streamlit using custom CSS.
+
+---
 
 ## 🔑 Key Features
 
@@ -39,6 +43,7 @@ The project features a stunning, fully responsive UI with an animated, glassmorp
 
 - **Secure & Private**: Documents are processed in-memory and are not stored on any server after the session ends
 
+---
 ## 🛠️ Tech Stack
 
 This project was built using the following technologies:
@@ -48,6 +53,8 @@ This project was built using the following technologies:
   - Google Generative AI (Gemini Pro)
   - PyMuPDF (fitz) for PDF text extraction
 - **Language**: Python
+
+---
 
 ## ⚙️ Setup & Installation
 
@@ -80,6 +87,7 @@ Inside .streamlit, create a file named secrets.toml
 ####  Add your Google AI API key to secrets.toml:
 
 #### toml
+
 GOOGLE_API_KEY = "YOUR_API_KEY_HERE"
 
 #### Run the Streamlit app:
@@ -91,3 +99,7 @@ streamlit run app.py
 A massive thank you to the developers of Streamlit for making web app creation in Python so accessible
 
 Thanks to Google for providing access to the powerful Gemini family of models
+
+---
+
+Made with LOVE <3
