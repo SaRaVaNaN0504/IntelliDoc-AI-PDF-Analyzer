@@ -102,4 +102,4 @@ Thanks to Google for providing access to the powerful Gemini family of models
 
 ---
 
-Made with LOVE <3
+Made with LOVE :heart:
